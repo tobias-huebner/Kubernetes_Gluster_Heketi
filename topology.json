@@ -1,0 +1,40 @@
+{
+  "clusters": [
+    {
+      "nodes": [
+        {
+          "node": {
+            "hostnames": {
+              "manage": [
+                "armin"
+              ],
+              "storage": [
+                "192.168.0.73"
+              ]
+            },
+            "zone": 1
+          },
+          "devices": [
+            "/dev/sda3"
+          ]
+        },
+        {
+          "node": {
+            "hostnames": {
+              "manage": [
+                "connie"
+              ],
+              "storage": [
+                "192.168.0.93"
+              ]
+            },
+            "zone": 1
+          },
+          "devices": [
+            "/dev/sda3"
+          ]
+        }
+      ]
+    }
+  ]
+}
