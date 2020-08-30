@@ -958,12 +958,10 @@ metadata:
   name: glusterfs-storage
 provisioner: kubernetes.io/glusterfs
 parameters:
-  resturl: \"http://${heketi_service}\""
-  if [[ "x${USER_KEY}" != "x" ]]; then
-    output "  restuser: \"user\"
-  restuserkey: \"${USER_KEY}\""
-  fi
-  output ""
+  resturl: \"http://${heketi_service}\"
+  restuser: \"admin\"
+  restuserkey: \"admin-key\""
+  
 fi
 
 
