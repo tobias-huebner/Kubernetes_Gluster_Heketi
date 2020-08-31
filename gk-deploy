@@ -952,18 +952,16 @@ use it from within the heketi pod:
 For dynamic provisioning, create a StorageClass similar to this:
 
 ---
-apiVersion: storage.k8s.io/v1beta1
+apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:
   name: glusterfs-storage
 provisioner: kubernetes.io/glusterfs
 parameters:
-  resturl: \"http://${heketi_service}\""
-  if [[ "x${USER_KEY}" != "x" ]]; then
-    output "  restuser: \"user\"
-  restuserkey: \"${USER_KEY}\""
-  fi
-  output ""
+  resturl: \"http://${heketi_service}\"
+  restuser: \"admin\"
+  restuserkey: \"admin-key\""
+  
 fi
 
 
